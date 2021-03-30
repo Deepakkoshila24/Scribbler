@@ -2,8 +2,6 @@
 <html>
 
 <head>
-    <!-- TODO: Include Font Awesome file here -->
-    <!-- TODO: Include Google Fonts file here -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montez|Roboto|Ubuntu+Mono&display=swap" rel="stylesheet">
@@ -16,7 +14,6 @@
 </head>
 
 <body style=" background-color: #ffae00;">
-    <!-- TODO: Include code for header here -->
     <div class="header">
         <div class="bg-signin">
             <button type="button" class="signinupbutton" data-toggle="modal" data-target="#exampleModal"
@@ -32,7 +29,7 @@
 
         <a id="pageTitle" class="logo-title">ScriBBler</a>
         <p class="sub-heading">Explore, Imagine, Create</p>
-        <!-- Modal for SignIn-->
+       
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -50,12 +47,12 @@
                                 <label for="exampleInputUsername">Username</label>
                                 <input type="text" class="form-control" id="exampleInputUsername"
                                     aria-describedby="usernameHelp" placeholder="Enter Username"
-                                    style="background-color : lightgray ;" required>
+                                     required>
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Password</label>
                                 <input type="password" class="form-control" id="exampleInputPassword1"
-                                    placeholder="Enter Password" style="background-color : lightgray ;" required>
+                                     placeholder="Enter Password" required>
                             </div>
                             <div class="modal-signin-container">
                                 <button type="submit" class="btn btn-success btn-block">Sign In</button>
@@ -69,7 +66,7 @@
                 </div>
             </div>
         </div>
-        <!-- Modal for Signup-->
+        
         <div class="modal fade" id="exampleModalSignUp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -87,24 +84,26 @@
                             <div class="form-group">
                                 <label for="name">Name</label>
                                 <input type="text" class="form-control" id="name" placeholder="Enter Full Name"
-                                    style="background-color : 	#DCDCDC ;" required>
+                                      required>
 
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputUsername1">Username</label>
                                 <input type="text" class="form-control" id="exampleInputUsername1"
                                     aria-describedby="emailHelp" placeholder="Enter Username"
-                                    style="background-color : lightgray ;" required>
+                                    required>
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Password</label>
                                 <input type="password" class="form-control" id="exampleInputPassword1"
-                                    placeholder="Enter Password" style="background-color :#lightgray;" required>
+                                    placeholder="Enter Password" 
+                                    required>
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Confirm Password</label>
                                 <input type="password" class="form-control" id="exampleInputPassword2"
-                                    placeholder="Confirm Password" style="background-color :lightgray ;" required>
+                                    placeholder="Confirm Password" 
+                                     required>
                             </div>
 
                             <div class="modal-signin-container">
@@ -117,11 +116,10 @@
             </div>
         </div>
     </div>
-    <!-- list of all posts is starting from here -->
 
     <div class="container">
 
-        <!-- post 1 starts from here -->
+        
 
 
         <div class="card-new" id="card1">
@@ -133,26 +131,26 @@
             <div class="custom-card-body">
                 <div>
                     <div class="card-body-heading">
-                        <span class="card-body-heading-content" id="heading1">‘let’ me be a ‘const’(ant), not a 
-                            ‘var’(iable)!</span>
+                        <span class="card-body-heading-content" id="heading1">'let' me be a 'const'(ant), not a 
+                            'var'(iable)!</span>
                         <span class="trash-button" data-toggle="modal" data-target="#modalConfirmYesNo1">
-                            <!-- TODO: Include Font Awesome icon for delete icon here -->
+                            
                             <i class="fa fa-trash fa-lg"></i>
                         </span>
                     </div>
 
                 </div>
-                <div class="post-text" id="content1">Since JavaScript does not have any type-checking, either of these keywords can be used to declare a variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same purpose, they are different.</div>
+                <div class="text" id="content1">Since JavaScript does not have any type-checking, either of these keywords can be used to declare a variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same purpose, they are different.</div>
 
-                <span class="ellipsis" onclick="openPost(author1,heading1,content1)">
+                <span class="ahc" onclick="openPost(author1,heading1,content1)">
 
                     <i style="font-size:24px" class="fa">&#xf141;</i>
                 </span>
 
             </div>
-            <!--- Delete card modal-->
+            
             <div id="modalConfirmYesNo1" class="modal fade">
-                <div class="modal-dialog " style="height: 15px; width:350px;">
+                <div class="modal-dialog modal-dialog-centered" style="height: 15px; width:350px;">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h4 id="lblTitleConfirmYesNo" class="modal-title" style="font-size: 15px;">
@@ -173,9 +171,9 @@
 
         </div>
 
-        <!-- post 1 ending -->
+        
 
-        <!-- post 2 starts from here -->
+        
 
         <div class="card-new" id="card2">
 
@@ -188,26 +186,26 @@
                         <span class="card-body-heading-content" id="heading2">What is linting and how can it save you
                             time?</span>
                         <span class="trash-button" data-toggle="modal" data-target="#modalConfirmYesNo2">
-                            <!-- TODO: Include Font Awesome icon for delete icon here -->
+                            
                             <i class="fa fa-trash fa-lg"></i>
                         </span>
                     </div>
 
                 </div>
-                <div class="post-text" id="content2">One of the biggest challenges in software development is time.
+                <div class="text" id="content2">One of the biggest challenges in software development is time.
                     It’s something we can’t easily get more of, but linting can help us make the most out
                     of the time we have.</div>
 
 
-                <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
-                <span class="ellipsis" onclick="openPost(author2,heading2,content2)">
+                
+                <span class="ahc" onclick="openPost(author2,heading2,content2)">
                     <i style="font-size:24px" class="fa">&#xf141;</i>
                 </span>
 
             </div>
-            <!--- Delete card modal-->
+           
             <div id="modalConfirmYesNo2" class="modal fade">
-                <div class="modal-dialog " style="height: 15px; width:350px;">
+                <div class="modal-dialog modal-dialog-centered" style="height: 15px; width:350px;">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h4 id="lblTitleConfirmYesNo" class="modal-title" style="font-size: 15px;">
@@ -228,9 +226,9 @@
 
         </div>
 
-        <!-- post 2 ending -->
+       
 
-        <!-- post 3 starts from here -->
+
 
 
         <div class="card-new" id="card3">
@@ -251,18 +249,18 @@
                     </div>
 
                 </div>
-                <div class="post-text" id="content3">If you're a developer with a Twitter account,
+                <div class="text" id="content3">If you're a developer with a Twitter account,
                     you've already seen everyone and their cat start a blog, YouTube channel, or Patreon.
                     We all want to become stars, or at the very least, a recognizable name in the industry.</div>
 
-                <span class="ellipsis" onclick="openPost(author3,heading3,content3)">
+                <span class="ahc" onclick="openPost(author3,heading3,content3)">
                     <i style="font-size:24px" class="fa">&#xf141;</i>
                 </span>
 
             </div>
-            <!--- Delete card modal-->
+            
             <div id="modalConfirmYesNo3" class="modal fade">
-                <div class="modal-dialog " style="height: 15px; width:350px;">
+                <div class="modal-dialog modal-dialog-centered" style="height: 15px; width:350px;">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h4 id="lblTitleConfirmYesNo" class="modal-title" style="font-size: 15px;">
@@ -284,8 +282,7 @@
 
         </div>
 
-        <!-- post 3 ending -->
-        <!-- post 4 starts from here -->
+        
 
 
         <div class="card-new" id="card4">
@@ -306,19 +303,19 @@
                     </div>
 
                 </div>
-                <div class="post-text" id="content4">When code is not describable using words, most people have to do
+                <div class="text" id="content4">When code is not describable using words, most people have to do
                     some mental mapping to turn it in to words. This wastes mental energy, and you run the risk of
                     getting the mapping wrong. Different people will map to different words, which
                     leads to confusion when discussing the code.</div>
 
-                <div class="ellipsis" onclick="openPost(author4,heading4,content4)">
+                <div class="ahc" onclick="openPost(author4,heading4,content4)">
                     <i style="font-size:24px" class="fa">&#xf141;</i>
                 </div>
 
             </div>
-            <!--- Delete card modal-->
+            
             <div id="modalConfirmYesNo4" class="modal fade">
-                <div class="modal-dialog " style="height: 15px; width:350px;">
+                <div class="modal-dialog modal-dialog-centered" style="height: 15px; width:350px;">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h4 id="lblTitleConfirmYesNo" class="modal-title" style="font-size: 15px;">Are you sure you
@@ -340,8 +337,7 @@
 
         </div>
 
-        <!-- post 4 ending -->
-        <!-- post 5 starts from here -->
+        
 
 
         <div class="card-new" id="card5">
@@ -362,19 +358,19 @@
                     </div>
 
                 </div>
-                <div class="post-text" id="content5">Node.js treats each JavaScript file as a separate module. For
+                <div class="text" id="content5">Node.js treats each JavaScript file as a separate module. For
                     instance, if you have a file containing some code and this file is named xyz.js, then this file is
                     treated as a module in Node, and you can say that you’ve created a module
                     named xyz.</div>
 
-                <span class="ellipsis" onclick="openPost(author5,heading5,content5)">
+                <span class="ahc" onclick="openPost(author5,heading5,content5)">
                     <i style="font-size:24px" class="fa">&#xf141;</i>
                 </span>
 
             </div>
-            <!--- Delete card modal-->
+            
             <div id="modalConfirmYesNo5" class="modal fade">
-                <div class="modal-dialog " style="height: 15px; width:350px;">
+                <div class="modal-dialog modal-dialog-centered" style="height: 15px; width:350px;">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h4 id="lblTitleConfirmYesNo" class="modal-title" style="font-size: 15px;">Are you sure you
@@ -397,7 +393,7 @@
 
         </div>
 
-        <!-- post 5 ending -->
+        
 
 
 

@@ -25,9 +25,9 @@
             </button>
         </div>
 
-        <a id="pageTitle" class="logo-title">ScriBBler</a>
+        <a id="heading" class="logo-title">ScriBBler</a>
         <p class="sub-heading">Explore, Imagine, Create</p>
-        <!-- Modal SignIN-- >
+        
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -45,12 +45,12 @@
                                 <label for="exampleInputUsername">Username</label>
                                 <input type="text" class="form-control" id="exampleInputUsername"
                                     aria-describedby="usernameHelp" placeholder="Enter Username"
-                                    style="background-color :lightgray ;" required>
+                                     required>
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Password</label>
                                 <input type="password" class="form-control" id="exampleInputPassword1"
-                                    placeholder="Enter Password" style="background-color : lightgray ;" required>
+                                    placeholder="Enter Password" required>
                             </div>
                             <div class="modal-signin-container">
                                 <button type="submit" class="btn btn-success btn-block">Sign In</button>
@@ -64,7 +64,7 @@
                 </div>
             </div>
         </div>
-        <!-- Modal Sign Up-->
+        
         <div class="modal fade" id="exampleModalSignUp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -82,24 +82,24 @@
                             <div class="form-group">
                                 <label for="name">Name</label>
                                 <input type="text" class="form-control" id="name" placeholder="Enter Full Name"
-                                    style="background-color : lightgray;" required>
+                                     required>
 
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputUsername1">Username</label>
                                 <input type="text" class="form-control" id="exampleInputUsername1"
                                     aria-describedby="emailHelp" placeholder="Enter Username"
-                                    style="background-color :lightgray ;" required>
+                                     required>
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Password</label>
                                 <input type="password" class="form-control" id="exampleInputPassword1"
-                                    placeholder="Enter Password" style="background-color :lightgray;" required>
+                                    placeholder="Enter Password" required>
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Confirm Password</label>
                                 <input type="password" class="form-control" id="exampleInputPassword2"
-                                    placeholder="Confirm Password" style="background-color :lightgray;" required>
+                                    placeholder="Confirm Password" required>
                             </div>
 
                             <div class="modal-signin-container">
@@ -115,8 +115,8 @@
 
     <div class="post container">
         <div class="heading-content" id="edit-heading" contenteditable="true"></div>
-        <div class="author">
-            <div class="author-name"></div>
+        <div class="edit">
+            <div class="name"></div>
             <div>
                 <button id="edit-button" type="button" class="btn btn-danger" onclick="onEdit()">Edit<i
                         class="fa fa-edit" style="padding-left: 5px;"></i></button>
@@ -127,14 +127,14 @@
         <div class="post-content" id="edit-contenttext" contenteditable="true">
         </div>
 
-        <button id="like-button" type="button" class="btn btn-danger" onclick="countLikes()"><i
+        <button id="like-thumb" type="button" class="btn btn-danger" onclick="countLikes()"><i
                 class="fa fa-thumbs-up"></i><span id="likeButton">Like</span></button>
-        <div id="showCount">Be the first one to like this</div>
+        <div id="counting">Be the first one to like this</div>
 
         <textarea id="comment" rows="4" cols="135" placeholder="Leave a comment..." name="comment"></textarea>
         <div><button id="comment-button" type="button" class="btn btn-danger"
                 onclick="addComment(comment)">Comment</button></div>
-        <div id="allCommentsHeading">All Comments</div>
+        <div id="commentsHeading">All Comments</div>
         <div class="comment-container">
             <div id="comments">
             </div>

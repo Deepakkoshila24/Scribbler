@@ -5,14 +5,14 @@ body {
   background-size: cover;
   margin: 100px auto;
 }
- .bg-post{
+ .post{
   display: flex;
   height: 80vh;
   justify-content: center;
   align-items: center;
  }
 
- .postbutton{
+ .postbtn{
   height: 50px;
   width: 160px;
   padding: 10px;

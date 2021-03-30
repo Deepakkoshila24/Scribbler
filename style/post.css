@@ -8,7 +8,7 @@ body{
    font-size: 25px;
    font-weight: bolder;
 }
-#pageTitle{
+#heading{
     font-family: Brush Script MT;
     font-family: 60px;
 }
@@ -18,13 +18,13 @@ body{
     font-size: 125%;
 }
 
-.author{
+.edit{
     display: flex;
     flex-direction: row;
     margin-top: 10px;
 }
 
-.author-name{
+.name{
     font-family: 'Courier New', Courier, monospace;
    font-weight: bold;
    font-size: 20px;
@@ -58,7 +58,7 @@ body{
     margin-top: 20px;
 }
 
-#like-button{
+#like-thumb{
     margin-top: 20px;
     margin-bottom: 10px;
     height: 40px;
@@ -76,12 +76,12 @@ body{
     border-radius: 2px;
 }
 
-#showCount{
+#counting{
     margin-bottom: 30px;
 
 }
 
-#allCommentsHeading{
+#commentsHeading{
     font-weight: bolder;
     padding-top: 10px;
 }
@@ -94,4 +94,13 @@ body{
 label{
     font-weight: bold;
 }
+input[type=text], input[type=password]{
+    border: none;
+    outline: 0;
+ }
 
+ input[type=text]:focus, input [type=password]:focus{
+    border: none;
+    background-color: lightgray;
+    box-shadow: none;
+ }
